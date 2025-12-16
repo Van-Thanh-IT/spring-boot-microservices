@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: user-sevice
+
+  server:
+    port: 8080
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/user_db?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 592002
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: MySQL8
+
